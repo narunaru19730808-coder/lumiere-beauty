@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LUMIÈRE BEAUTY | もっと素敵な私へ</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:"Noto Sans JP","Yu Gothic",sans-serif;color:#4b4542;background:#fcfaf7}a{text-decoration:none;color:inherit}
+header{height:74px;background:#fffaf6;display:flex;align-items:center;justify-content:space-between;padding:0 6%;border-bottom:1px solid #eee5dc;position:sticky;top:0;z-index:10}
+.logo{font-family:Georgia,serif;letter-spacing:3px;font-size:24px;color:#9a7656}.nav{display:flex;gap:28px;font-size:13px}.nav a:hover{color:#a78362}.header-btn{border:1px solid #b59476;padding:10px 18px;border-radius:22px;color:#8e6b4c}
+.hero{min-height:560px;display:flex;align-items:center;padding:70px 8%;background:linear-gradient(110deg,#f5eee7 0%,#fbf8f4 52%,#eaded3 100%);position:relative;overflow:hidden}
+.hero-copy{width:48%;z-index:2}.eyebrow{letter-spacing:4px;font-size:12px;color:#a17e5e}.hero h1{font-family:Georgia,"Yu Mincho",serif;font-weight:400;font-size:58px;line-height:1.25;margin:18px 0;color:#544941}.hero p{line-height:2;color:#776b63}.search{margin-top:30px;background:#fff;padding:10px;border-radius:5px;box-shadow:0 8px 30px #806b5818;display:flex;gap:8px}.search input,.search select{border:0;background:#faf8f5;padding:15px;color:#777;flex:1;min-width:0}.search button{border:0;background:#a98768;color:white;padding:0 24px;border-radius:3px}.hero-photo{position:absolute;right:4%;top:40px;width:47%;height:480px;background:linear-gradient(145deg,#dfd0c2,#bca08a);border-radius:45% 45% 8px 8px;opacity:.82}
+.hero-photo:after{content:"BEAUTY / WELLNESS";position:absolute;bottom:28px;right:35px;letter-spacing:4px;color:#fff;font-size:12px}
+section{padding:70px 8%}.section-head{text-align:center;margin-bottom:36px}.section-head .en{font-family:Georgia,serif;letter-spacing:3px;color:#a17e5e;font-size:13px}.section-head h2{font-family:"Yu Mincho",Georgia,serif;font-weight:400;font-size:32px;margin:8px 0}.section-head p{font-size:13px;color:#8a817b}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.coupon{background:#fff;border:1px solid #eee4da;box-shadow:0 5px 20px #8d6f5810}.coupon-img{height:175px;background:linear-gradient(135deg,#e7dbd0,#cbb7a5);position:relative}.badge{position:absolute;top:12px;left:12px;background:#9c7655;color:#fff;padding:6px 10px;font-size:11px}.coupon-body{padding:20px}.salon{font-size:12px;color:#9b8068}.coupon h3{font-size:17px;font-weight:500;margin:8px 0}.price{display:flex;align-items:baseline;gap:8px}.old{text-decoration:line-through;color:#aaa;font-size:12px}.new{font-size:25px;color:#a06f48;font-weight:600}.coupon-bottom{display:flex;justify-content:space-between;align-items:center;margin-top:14px;font-size:11px}.reserve{background:#a98768;color:white;padding:10px 15px;border-radius:3px}
+.concerns{background:#f3ece5}.concern-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.concern{background:#fff;padding:25px 8px;text-align:center;border:1px solid #e9dfd6}.icon{font-size:25px;margin-bottom:10px}.concern span{font-size:12px}
+.ranking{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.rank-card{background:#fff;padding:22px;border:1px solid #eee4da}.rank-num{font-family:Georgia,serif;color:#b18d6d;font-size:26px}.rank-photo{height:145px;margin:12px 0;background:linear-gradient(135deg,#ded0c4,#bba28b)}.stars{color:#a98768;letter-spacing:2px;font-size:12px}.rank-card h3{font-weight:500;font-size:16px}.rank-card p{font-size:12px;color:#817872;line-height:1.8}
+.feature-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;grid-template-rows:180px 180px;gap:16px}.feature{position:relative;background:linear-gradient(135deg,#e5d8cd,#bda592);overflow:hidden}.feature:first-child{grid-row:span 2}.feature div{position:absolute;bottom:0;left:0;right:0;padding:18px;color:white;background:linear-gradient(transparent,#4c4039b8)}.feature h3{margin:0 0 4px;font-family:"Yu Mincho",serif;font-weight:400}.feature p{margin:0;font-size:11px}
+.cta{margin:20px 8% 70px;padding:55px 8%;background:#eadfd5;text-align:center}.cta h2{font-family:"Yu Mincho",serif;font-size:30px;font-weight:400;margin:8px}.cta p{font-size:13px;line-height:2}.cta button{margin-top:15px;border:0;background:#9d7858;color:#fff;padding:14px 35px}
+footer{background:#4d4540;color:#eee;padding:45px 8%;display:flex;justify-content:space-between;font-size:11px}.footer-logo{font-family:Georgia,serif;font-size:22px;letter-spacing:3px}
+@media(max-width:800px){.nav{display:none}.hero{min-height:650px;padding:45px 7%;align-items:flex-start}.hero-copy{width:100%}.hero h1{font-size:43px}.hero-photo{width:80%;height:300px;top:auto;bottom:0;right:-10%;opacity:.45}.search{flex-wrap:wrap}.search input,.search select{width:100%;flex:auto}.search button{width:100%;padding:14px}.cards,.ranking{grid-template-columns:1fr}.concern-grid{grid-template-columns:repeat(3,1fr)}.feature-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:180px 180px}.feature:first-child{grid-row:span 2}.cta{margin-left:0;margin-right:0}footer{display:block}.footer-logo{margin-bottom:20px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">LUMIÈRE BEAUTY</div>
+  <nav class="nav"><a href="#coupon">クーポン</a><a href="#search">サロンを探す</a><a href="#feature">特集</a><a href="#ranking">人気サロン</a><a href="#column">コラム</a></nav>
+  <a class="header-btn" href="#salon">掲載をご希望のサロン様</a>
+</header>
+
+<main>
+<section class="hero" id="search">
+  <div class="hero-copy">
+    <div class="eyebrow">FOR YOUR BEAUTIFUL DAYS</div>
+    <h1>もっと素敵な<br>私へ。</h1>
+    <p>美容も、癒しも、ちょっとしたご褒美も。<br>今のあなたにぴったりのサロンを見つけよう。</p>
+    <div class="search">
+      <select><option>エリアを選ぶ</option><option>名古屋</option><option>栄</option><option>名駅</option></select>
+      <select><option>ジャンルを選ぶ</option><option>エステ</option><option>ネイル</option><option>美容室</option><option>リラク</option></select>
+      <input placeholder="キーワード・悩みから探す">
+      <button>検索</button>
+    </div>
+  </div>
+  <div class="hero-photo"></div>
+</section>
+
+<section id="coupon">
+  <div class="section-head"><div class="en">TODAY'S COUPON</div><h2>今、おすすめのクーポン</h2><p>はじめての方にもおすすめ。お得にキレイを楽しもう。</p></div>
+  <div class="cards">
+    <article class="coupon"><div class="coupon-img"><span class="badge">初回限定</span></div><div class="coupon-body"><div class="salon">ÉCLAT BEAUTY / 栄</div><h3>毛穴ケア＋潤いフェイシャル</h3><div class="price"><span class="old">¥12,000</span><span class="new">¥6,980</span></div><div class="coupon-bottom"><span>★ 4.8　口コミ128件</span><a class="reserve" href="#">このクーポンで予約</a></div></div></article>
+    <article class="coupon"><div class="coupon-img"><span class="badge">人気No.1</span></div><div class="coupon-body"><div class="salon">NOBLE NAIL / 名駅</div><h3>大人の上品ワンカラーネイル</h3><div class="price"><span class="old">¥8,800</span><span class="new">¥5,500</span></div><div class="coupon-bottom"><span>★ 4.9　口コミ96件</span><a class="reserve" href="#">このクーポンで予約</a></div></div></article>
+    <article class="coupon"><div class="coupon-img"><span class="badge">今月限定</span></div><div class="coupon-body"><div class="salon">LUXE RELAX / 金山</div><h3>アロマリンパ＋ヘッドスパ 90分</h3><div class="price"><span class="old">¥13,200</span><span class="new">¥7,900</span></div><div class="coupon-bottom"><span>★ 4.7　口コミ74件</span><a class="reserve" href="#">このクーポンで予約</a></div></div></article>
+  </div>
+</section>
+
+<section class="concerns">
+  <div class="section-head"><div class="en">FIND BY CONCERN</div><h2>お悩みからサロンを探す</h2><p>「なりたい私」から選んでみてください。</p></div>
+  <div class="concern-grid">
+    <div class="concern"><div class="icon">✦</div><span>肌をきれいに</span></div><div class="concern"><div class="icon">◇</div><span>小顔・フェイスライン</span></div><div class="concern"><div class="icon">♡</div><span>痩せたい・ボディ</span></div><div class="concern"><div class="icon">✧</div><span>ネイル</span></div><div class="concern"><div class="icon">○</div><span>目元・まつ毛</span></div><div class="concern"><div class="icon">☾</div><span>疲れを癒したい</span></div>
+  </div>
+</section>
+
+<section id="ranking">
+  <div class="section-head"><div class="en">WOMEN'S FAVORITES</div><h2>人気サロンランキング</h2><p>今週、女性から選ばれているサロンをご紹介。</p></div>
+  <div class="ranking">
+    <article class="rank-card"><div class="rank-num">01</div><div class="rank-photo"></div><div class="stars">★★★★★ 4.9</div><h3>ÉCLAT BEAUTY</h3><p>肌質改善・フェイシャルを中心に、大人女性に人気のプライベートサロン。</p></article>
+    <article class="rank-card"><div class="rank-num">02</div><div class="rank-photo"></div><div class="stars">★★★★★ 4.8</div><h3>NOBLE NAIL</h3><p>上品で洗練されたネイルデザイン。仕事でも楽しめる大人の指先へ。</p></article>
+    <article class="rank-card"><div class="rank-num">03</div><div class="rank-photo"></div><div class="stars">★★★★★ 4.8</div><h3>LUXE RELAX</h3><p>静かな空間で心と身体を整える、女性専用リラクゼーションサロン。</p></article>
+  </div>
+</section>
+
+<section id="feature">
+  <div class="section-head"><div class="en">EDITOR'S FEATURE</div><h2>今月のおすすめ特集</h2><p>忙しい毎日を過ごす女性へ、編集部がセレクト。</p></div>
+  <div class="feature-grid">
+    <div class="feature"><div><h3>頑張る私に、月に一度のご褒美</h3><p>自分を大切にするための上質サロン特集</p></div></div>
+    <div class="feature"><div><h3>仕事帰りにキレイ</h3><p>駅近・夜まで営業</p></div></div>
+    <div class="feature"><div><h3>1万円以内で楽しむ</h3><p>お財布にも嬉しいクーポン</p></div></div>
+    <div class="feature"><div><h3>初めてでも安心</h3><p>口コミ高評価サロン</p></div></div>
+    <div class="feature"><div><h3>30代からの美しさ</h3><p>大人女性におすすめ</p></div></div>
+  </div>
+</section>
+
+<section id="column">
+  <div class="section-head"><div class="en">BEAUTY COLUMN</div><h2>キレイを楽しむコラム</h2><p>美容・セルフケア・ライフスタイルのヒント。</p></div>
+  <div class="cards">
+    <article class="coupon"><div class="coupon-img"></div><div class="coupon-body"><div class="salon">BEAUTY</div><h3>忙しい女性こそ「自分時間」を持つ理由</h3><p style="font-size:12px;line-height:1.8;color:#817872">美容だけでなく、毎日の心地よさを整えるヒントをご紹介。</p></div></article>
+    <article class="coupon"><div class="coupon-img"></div><div class="coupon-body"><div class="salon">SKIN CARE</div><h3>サロン初心者が失敗しない選び方</h3><p style="font-size:12px;line-height:1.8;color:#817872">口コミ・料金・施術内容から、自分に合うサロンを見つける方法。</p></div></article>
+    <article class="coupon"><div class="coupon-img"></div><div class="coupon-body"><div class="salon">LIFESTYLE</div><h3>「きれいになりたい」を楽しむ暮らし</h3><p style="font-size:12px;line-height:1.8;color:#817872">無理なく続けられる、自分磨きの小さな習慣。</p></div></article>
+  </div>
+</section>
+
+<section class="cta" id="salon"><div class="eyebrow">FOR SALON OWNERS</div><h2>新しいお客様との出会いを。</h2><p>クーポン・特集・ランキング・口コミを通じて、<br>あなたのサロンの魅力を届けませんか？</p><button>サロン掲載について</button></section>
+</main>
+
+<footer><div class="footer-logo">LUMIÈRE BEAUTY</div><div>運営会社　｜　掲載について　｜　利用規約　｜　プライバシーポリシー　｜　お問い合わせ<br><br>© LUMIÈRE BEAUTY MEDIA</div></footer>
+</body>
+</html>
